@@ -156,7 +156,8 @@ body {
 }
 
 .logo {
-	width: 400px;
+	width: 100%;
+	max-width: 350px;
 }
 
 .dark-bg {
@@ -259,4 +260,68 @@ body {
 .map iframe {
 	height: 400px;
 	width: 100%;
+}
+
+.section + .qr,
+.section + .map,
+.section + .dark-bg,
+.section + .advantages {
+	padding-inline: 0;
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 24px;
+	}
+
+	.logo {
+		max-width: 250px;
+	}
+
+	.section {
+		padding: 20px 10px;
+		gap: 10px;
+	}
+
+	.title-wrap {
+		padding-block: 20px;
+	}
+	.title {
+		font-size: 28px;
+	}
+
+	.list {
+		gap: 5px;
+	}
+
+	.item {
+		font-size: 28px;
+	}
+
+	.item::before {
+		left: -30px;
+		width: 15px;
+	}
+
+	.button {
+		padding: 15px 20px;
+	}
+
+	.qr-code {
+		width: 250px;
+	}
+
+	.text-wrap {
+		margin-top: -80px;
+		padding: 20px 10px 30px 10px;
+		height: 150px;
+	}
+
+	.map {
+		height: 300px;
+	}
+
+	.map iframe {
+		height: 300px;
+	}
 }
