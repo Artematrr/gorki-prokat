@@ -217,7 +217,7 @@ body {
 	background-color: #000;
 	color: #fff;
 	text-decoration: none;
-	transition: background-color 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .button:hover {
@@ -263,10 +263,52 @@ body {
 }
 
 .section + .qr,
-.section + .map,
 .section + .dark-bg,
 .section + .advantages {
 	padding-inline: 0;
+}
+
+.section + .map {
+	padding-inline: 15px;
+}
+
+.dark-bg ~ .dark-bg {
+	margin-bottom: -15px;
+}
+
+.contacts {
+}
+
+.contacts-text {
+	display: inline-flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.icon {
+	width: 48px;
+	aspect-ratio: 1;
+}
+
+.tg-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 15px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #049be5;
+	padding: 5px 20px;
+	border-radius: 20px;
+	font-size: 24px;
+	transition: all 0.2s ease-in-out;
+}
+
+.tg-button:hover {
+	opacity: 0.9;
+}
+
+.tg-button:active {
+	filter: brightness(0.8);
 }
 
 @media (max-width: 768px) {
